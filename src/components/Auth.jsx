@@ -55,7 +55,7 @@ const Auth = () => {
   // 15
   console.log(auth?.currentUser?.email);
   console.log(auth?.currentUser?.photoURL);
-  console.log(auth?.currentUser);
+  console.log(auth?.currentUser?.uid);
 
   const userCollectionReference = collection(db, "users");
 
