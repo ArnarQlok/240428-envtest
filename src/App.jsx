@@ -46,16 +46,7 @@ function App() {
   return (
     <Routes>
       <Route path="/login" element={<Auth />} />
-      <Route
-        path="/"
-        element={
-          <ProtectedRoute>
-            <MovieList />
-          </ProtectedRoute>
-        }
-      />
-      {/* <Route path="/" element={<MovieList />} /> */}
-      {/* <Route path="/" index element={<MovieList />} /> */}
+      <Route path="/" element={<MovieList />} />
     </Routes>
   );
 }
